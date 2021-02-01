@@ -1,0 +1,34 @@
+.headerWrapper {
+  display: flex;
+  min-height: 9vh;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  background-color: #4c4c4c;
+  cursor: default;
+}
+
+.navBar {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.navItem {
+  margin: 0 15px;
+  font-size: 22px;
+  text-decoration: none;
+  color: plum;
+}
+
+.navItem:hover {
+  cursor: pointer;
+  color: #bf88bf;
+}
+.headerWrapper>div>i {
+  font-size: 25px;
+}
+
+.active {
+  color: #8a5b8a;
+}
