@@ -1,1 +1,10 @@
-<p>posts works!</p>
+
+<h1 class="postTitle">All posts</h1>
+
+<router-outlet>
+
+</router-outlet>
+
+<div class="postsWrapper">
+  <app-post *ngFor="let p of posts" [post]="p" ></app-post>
+</div>

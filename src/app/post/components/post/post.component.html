@@ -1,1 +1,7 @@
-<p>post works!</p>
+<div class="postWrapper">
+  {{post.id}}. {{post.title}}
+  <button (click)="chosenPost?.id === post.id ? closePost() : getBodyFromChosenPost(post)"
+          [routerLink]="[post.id]" class="btnShow" [class.btnClose]="chosenPost?.id===post.id">
+    {{chosenPost?.id === post.id ? 'close post' : 'show post body'}}
+  </button>
+</div>
